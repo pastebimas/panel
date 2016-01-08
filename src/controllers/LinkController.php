@@ -19,8 +19,8 @@ class LinkController extends CrudController {
 
         $this->grid = \DataGrid::source($this->filter);
         $this->grid->add('id', 'ID', true)->style("width:100px");
-        $this->grid->add('display', 'Display');
-        $this->grid->add('url', 'Model');
+        $this->grid->add('display', 'Disasfasfasfasplay');
+        $this->grid->add('url', 'Masfasfasfodel');
 
         $this->addStylesToGrid();
 

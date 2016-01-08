@@ -54,7 +54,7 @@ Route::get('/panel/password/reset/{token}', function ($token){
     return View::make('panelViews::passwordReset')->with('token', $token);
 });
 
-Route::get('/panel/logout', array('uses' => 'Serverfireteam\Panel\AuthController@doLogout'));
+Route::get('/panel/logoutas', array('uses' => 'Serverfireteam\Panel\AuthController@doLogout'));
 
 Route::post('/panel/reset', array('uses' => 'Serverfireteam\Panel\RemindersController@postReset'));
 
