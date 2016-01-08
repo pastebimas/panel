@@ -4,7 +4,7 @@
 
 {!! $filter !!}
 
-<br><br>
+<br><br>BERNOTASSSS
 <a href="{!! url('panel/'.$current_entity.'/export/excel') !!}" class="btn btn-info">{!! \Lang::get('panel::fields.exportAsExcel') !!}</a>
 
 <button class="btn btn-warning" data-toggle="modal" data-target="#import_modal">{!! \Lang::get('panel::fields.importData') !!}</button>
