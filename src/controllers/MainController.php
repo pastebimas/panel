@@ -27,7 +27,7 @@ class MainController extends Controller {
             if ( isset($panel_path) ){               
                $controller_path = '\\'.$panel_path.'\\'.$entity.'Controller';                
             } else {
-                $controller_path = $appHelper->getNameSpace().'Http\Controllers\Admin\\'.$entity.'Controller';            
+                $controller_path = $appHelper->getNameSpace().'Http\Controllers\Admin\\'.$entity.'Controller';     // cia dadejau     \Admin del bendros tvarkos   
             }                        
         }     
                
