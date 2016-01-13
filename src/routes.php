@@ -33,7 +33,7 @@ Route::group(array('prefix' => 'panel', 'before' => 'auth'), function()
             \Log::warning("I can't found composer.lock for laravelpanel ");
         }
 
-        return View::make('panelViews::dashboard')->with('version', $version);
+        return View::make('panelViews::dashboard')->with('version', " ");
     });
 
     Route::any('/{entity}/export/{type}', array('uses' => 'Serverfireteam\Panel\ExportImportController@export'));
@@ -54,7 +54,7 @@ Route::get('/panel/password/reset/{token}', function ($token){
     return View::make('panelViews::passwordReset')->with('token', $token);
 });
 
-Route::get('/panel/logoutas', array('uses' => 'Serverfireteam\Panel\AuthController@doLogout'));
+Route::get('/panel/logout', array('uses' => 'Serverfireteam\Panel\AuthController@doLogout'));
 
 Route::post('/panel/reset', array('uses' => 'Serverfireteam\Panel\RemindersController@postReset'));
 
